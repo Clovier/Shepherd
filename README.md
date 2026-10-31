@@ -12,7 +12,7 @@ In a multi-agent LLM system, the work is split across agents that each have thei
 
 When one agent gets hijacked this way, it can pass bad instructions or bad data to the rest of the team. For example, the email agent reads a message saying "forward all invoices to this address," then asks the files agent for the invoices.
 
-## What Shephard adds
+## What Shepherd adds
 
 Three learned components that sit on top of the agent team:
 
@@ -33,9 +33,9 @@ Can a small learned monitor, watching only the messages between agents, catch a 
 ## Related work
 
 - [AgentDojo](https://github.com/ethz-spylab/agentdojo) is a benchmark with realistic tasks, injection attacks, and automatic checks for whether each task got done and whether each attack worked. It runs a single agent. We plan to run its tasks with a team of agents instead, so an attack can spread from one agent to the next.
-- [AgentDyn](https://github.com/SaFo-Lab/AgentDyn) builds on AgentDojo with open-ended tasks and outside content that also contains legitimate instructions. Its authors found that almost all existing defenses either miss attacks or block too much legitimate work. We plan to use it as a second test, mainly to check that Shephard doesn't flag legitimate instructions as attacks.
+- [AgentDyn](https://github.com/SaFo-Lab/AgentDyn) builds on AgentDojo with open-ended tasks and outside content that also contains legitimate instructions. Its authors found that almost all existing defenses either miss attacks or block too much legitimate work. We plan to use it as a second test, mainly to check that Shepherd doesn't flag legitimate instructions as attacks.
 - Text filters like Llama Prompt Guard 2 check each tool output for injected text on its own. [Injections written to blend in with the task](https://arxiv.org/abs/2605.22001) can slip past them.
-- [G-Safeguard](https://arxiv.org/abs/2502.11127) and [BlindGuard](https://arxiv.org/abs/2508.08127) also use graph neural networks to find compromised agents in a team. They check after each round of conversation and were evaluated mostly on question-answering tasks. Shephard focuses on teams that act through tools, on stopping the harmful action before it happens, and on attack types held out from training.
+- [G-Safeguard](https://arxiv.org/abs/2502.11127) and [BlindGuard](https://arxiv.org/abs/2508.08127) also use graph neural networks to find compromised agents in a team. They check after each round of conversation and were evaluated mostly on question-answering tasks. Shepherd focuses on teams that act through tools, on stopping the harmful action before it happens, and on attack types held out from training.
 
 ## Evaluation
 
@@ -55,7 +55,7 @@ Can a small learned monitor, watching only the messages between agents, catch a 
 
 ## Safety
 
-All attacks are synthetic and only run against Shephard's own agents in a simulated environment. We never point them at real services, accounts, or people.
+All attacks are synthetic and only run against Shepherd's own agents in a simulated environment. We never point them at real services, accounts, or people.
 
 ## Authors
 
