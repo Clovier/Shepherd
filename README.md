@@ -1,8 +1,7 @@
-# Shepherd
+# Shepherd: Detecting and Containing Prompt-Injected Agents in Multi-Agent LLM Systems
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Detecting and Containing Prompt-Injected Agents in Multi-Agent LLM Systems.
 
 > **Status:** early planning. There's no code yet. This README describes what we're building and how we plan to test it.
 
