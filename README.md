@@ -59,7 +59,7 @@ All attacks are synthetic and only run against Shepherd's own agents in a simula
 
 ## Authors
 
-[Tyler Van Heerden](https://github.com/Clovier) and [Paria Akhtrmoghaddam](https://github.com/paria03)
+[Ty Van Heerden](https://github.com/Clovier) and [Paria Akhtrmoghaddam](https://github.com/paria03)
 
 ## License
 
